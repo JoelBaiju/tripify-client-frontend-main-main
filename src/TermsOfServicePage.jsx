@@ -1,0 +1,265 @@
+// import React from 'react';
+// import { useNavigate } from 'react-router-dom';
+// import { motion } from 'framer-motion';
+
+// const TermsOfServicePage = () => {
+//     const navigate = useNavigate();
+
+//     return (
+//         <motion.div
+//             className="bg-gray-100 min-h-screen  space-y-8 text-lg"
+//             initial={{ opacity: 0 }}
+//             animate={{ opacity: 1 }}
+//             transition={{ duration: 0.5 }}
+//         >
+//              <div className="h-fit w-full bg-gradient-to-r from-blue-500 via-blue-400 to-blue-900 ">
+//                 <img src="/view-3d-practicing-lawyer.png" alt="" className="w-80 ml-28" />
+//                 <div className='md:absolute md:top-[25%] md:right-[25%] md:pb-0 pb-10'>
+//                 <motion.h2
+//                         className="font-bold text-white text-5xl"
+//                         initial={{ y: -50, opacity: 0 }}
+//                         animate={{ y: 0, opacity: 1 }}
+//                         transition={{ duration: 0.5, delay: 0.2 }}
+//                     >
+//                         Terms and Conditions - QatayWorld Pvt Ltd.
+//                     </motion.h2>
+//                 </div>
+//              </div>
+//             <div
+//                 className="cursor-pointer absolute top-0 left-0 px-5 "
+//                 onClick={() => navigate('/')}
+//             >
+//                 <img
+//                     src="/TRIP999Artboard 1@4x (1).png"
+//                     alt="TRIPIFYME Logo"
+//                     className="w-16"
+//                 />
+//                 <p className='text-xs font-bold py-2'>By QATAYWORLD PVT LTD</p>
+//             </div>
+            
+
+//             <motion.div
+//                 className="space-y-10 px-10 py-5"
+//                 initial={{ y: -50, opacity: 0 }}
+//                 animate={{ y: 0, opacity: 1 }}
+//                 transition={{ duration: 0.5, delay: 0.3 }}
+//             >
+//                 <section>
+//                     <h3 className="font-bold text-2xl">What do you get from TRIPIFYME by QATAYWORLD PVT LTD</h3>
+//                     <ul className="list-disc list-inside">
+//                         <li>Customers under this offer will get attractive discounts on Flights, Hotels, Buses, Cabs and Holiday Packages booked TRIPIFYME.</li>
+//                         <li>Each transaction during the sale period.</li>
+//                         <li>A few lucky winners will also get a chance to win giveaway vacations.</li>
+//                         <li>During this sale, you will get to enjoy:
+//                             <ul className="list-disc list-inside ml-5">
+//                                 <li>Discounted fares on selected airlines: Air Mauritius, Air France, KLM Dutch Airlines, Delta Airlines, British Airways, Ethiopian Airlines, ITA Airways, IndiGo, Korean Airlines, LOT Polish, Lufthansa & Swiss Airlines, Qantas Airways, Qatar Airways, SpiceJet, Turkish Airlines, Virgin Atlantic and Vistara.</li>
+//                                 <li>Discounted rates on exclusive selected hotels: Sunsiyam, Neemrana, Inde Hotel, Sterling, Spree, Byke, Justa, Vits, Brij, Royal, Orchid and Regenta, Suba Group, Pride, Club Mahindra, Clarks, Amritara, Cygnett, OTHPL, The Clarks, One Earth, Welcomheritage, Shrigo, Starlit, Beyond Stay, Le roi, Zone By The Park, The Fern, Fab hotel, Ramee Group of Hotel, Jain Group, Sumiyashee, Moustache Escape, Playotel, Lime Tree, Treehouse, Mount Hotels and Summit Hotels & Resorts.</li>
+//                                 <li>Attractive discount on Holiday Packages:
+//                                     <ul className="list-disc list-inside ml-5">
+//                                         <li>Travel international including flights under INR 30,990/-*</li>
+//                                         <li>Travel Domestic under INR 10,599/-*</li>
+//                                         <li>Spiritual Tours under INR 12,599/-*</li>
+//                                     </ul>
+//                                 </li>
+//                             </ul>
+//                         </li>
+//                         <li>For queries, contact us at:
+//                             <ul className="list-disc list-inside ml-5">
+//                                 <li>Email ID: MAIL@TRIPIFYME.COM</li>
+//                                 <li>Phone Number: 907 202121 7 / 907 212121 7 / 907 222121 7</li>
+//                             </ul>
+//                         </li>
+//                     </ul>
+//                 </section>
+
+//                 <section>
+//                     <h3 className="font-bold text-2xl">How do you get it</h3>
+//                     <ul className="list-disc list-inside">
+//                         <li>Giveaway Rewards:
+//                             <ul className="list-disc list-inside ml-5">
+//                                 <li>Follow the TRIPIFYME.TRIP account on Instagram.</li>
+//                                 <li>Participate in various Sales Contests.</li>
+//                                 <li>Keep checking the stories on Instagram for the winner's list.</li>
+//                                 <li>The winners will be announced on Social Media Platforms, post-sale only.</li>
+//                             </ul>
+//                         </li>
+//                     </ul>
+//                 </section>
+
+//                 <section>
+//                     <h3 className="font-bold text-2xl">What else do you need to know?</h3>
+//                     <ul className="list-disc list-inside">
+//                         <li>Bus booking offer:
+//                             <ul className="list-disc list-inside ml-5">
+//                                 <li>The maximum discount that can be availed by the user is ₹500.</li>
+//                                 <li>The offer cannot be clubbed with any other promotional offers.</li>
+//                                 <li>Bookings with valid promo codes will be only eligible for this offer.</li>
+//                                 <li>The discount will be calculated on base fare.</li>
+//                                 <li>The offer is applicable on private bus bookings only.</li>
+//                             </ul>
+//                         </li>
+//                         <li>Cab booking offer:
+//                             <ul className="list-disc list-inside ml-5">
+//                                 <li>The users will receive a 25% discount on Airport transfer, Hourly rental, One Way & Round Trip Cab Bookings with TRIPIFYME.</li>
+//                                 <li>The 25% (up to) discount on cab will be calculated on base fare.</li>
+//                                 <li>The maximum discount under this offer is ₹2500.</li>
+//                                 <li>The offer is applicable on selected cabs only.</li>
+//                                 <li>This offer is valid for a limited period.</li>
+//                                 <li>Amendments are not allowed for any of the cab bookings.</li>
+//                             </ul>
+//                         </li>
+//                     </ul>
+//                 </section>
+
+//                 <section>
+//                     <h3 className="font-bold text-2xl">Terms & Conditions</h3>
+//                     <ul className="list-disc list-inside">
+//                         <li>In the event of any misuse or abuse of the offer, TRIPIFYME reserves the right to deny the offer to the customers.</li>
+//                         <li>TRIPIFYME is the sole authority for interpretation of these terms.</li>
+//                         <li>In addition, TRIPIFYME standard booking and privacy policy on www.TripifyMe.in shall apply.</li>
+//                         <li>In the event of any dispute, Courts of Kerala will have jurisdiction.</li>
+//                         <li>TRIPIFYME reserves the right, at any time, without prior notice and liability and without assigning any reason whatsoever, to add/alter/modify/change or vary all of these terms and conditions or to replace, wholly or in part, this offer by another offer, whether similar to this offer or not, or to extend or withdraw it altogether.</li>
+//                         <li>TRIPIFYME shall not be liable for any loss or damage arising due to force majeure.</li>
+//                     </ul>
+//                 </section>
+//             </motion.div>
+//         </motion.div>
+//     );
+// };
+
+// export default TermsOfServicePage;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
+
+const TermsOfServicePage = () => {
+    const navigate = useNavigate();
+
+    return (
+        <motion.div
+            className="bg-gray-100 min-h-screen space-y-8 text-lg"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+        >
+            <div className="h-fit w-full bg-gradient-to-r from-blue-500 via-blue-400 to-blue-900 ">
+                <img src="/view-3d-practicing-lawyer.png" alt="" className="w-80 ml-28" />
+                <div className='md:absolute md:top-[25%] md:right-[25%] md:pb-0 pb-10'>
+                    <motion.h2
+                        className="font-bold text-white text-5xl"
+                        initial={{ y: -50, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 0.5, delay: 0.2 }}
+                    >
+                        Terms and Conditions - QatayWorld Pvt Ltd.
+                    </motion.h2>
+                </div>
+            </div>
+            <div
+                className="cursor-pointer absolute top-0 left-0 px-5 "
+                onClick={() => navigate('/')}
+            >
+                <img
+                    src="/TRIP999Artboard 1@4x (1).png"
+                    alt="TRIPIFYME Logo"
+                    className="w-16"
+                />
+                <p className='text-xs font-bold py-2'>By QATAYWORLD PVT LTD</p>
+            </div>
+
+            <motion.div
+                className="space-y-10 px-10 py-5"
+                initial={{ y: -50, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+            >
+                <section>
+                    <h3 className="font-bold text-2xl">Acceptance of Terms</h3>
+                    <p>By accessing or using our Site, you confirm that you are at least 18 years old or have obtained parental consent to use our Site. Your use of the Site constitutes acceptance of these Terms.</p>
+                </section>
+
+                <section>
+                    <h3 className="font-bold text-2xl">Changes to Terms</h3>
+                    <p>We reserve the right to modify these Terms at any time. Any changes will be effective immediately upon posting on this page. Your continued use of the Site after changes are posted constitutes acceptance of the updated Terms.</p>
+                </section>
+
+                <section>
+                    <h3 className="font-bold text-2xl">Use of the Site</h3>
+                    <p>You agree to use the Site for lawful purposes only and shall not engage in any conduct that disrupts or interferes with the Site’s functionality, use automated systems, or upload harmful code.</p>
+                </section>
+
+                <section>
+                    <h3 className="font-bold text-2xl">Intellectual Property</h3>
+                    <p>All content, including text, images, logos, and software on the Site, is the property of Qatayworld Pvt Ltd or its licensors and is protected by intellectual property laws. You may not copy, distribute, or use this content without prior written consent.</p>
+                </section>
+
+                <section>
+                    <h3 className="font-bold text-2xl">User-Generated Content</h3>
+                    <p>If you submit content to the Site (e.g., comments or reviews), you grant us a non-exclusive, royalty-free, perpetual, and worldwide license to use, modify, and distribute your content. You are solely responsible for the content you submit.</p>
+                </section>
+
+                <section>
+                    <h3 className="font-bold text-2xl">Third-Party Links</h3>
+                    <p>Our Site may contain links to third-party websites. We are not responsible for the content, policies, or practices of these third-party sites. Accessing these links is at your own risk.</p>
+                </section>
+
+                <section>
+                    <h3 className="font-bold text-2xl">Disclaimer of Warranties</h3>
+                    <p>The Site is provided “as is” and “as available.” We do not guarantee the Site will be error-free or uninterrupted. We disclaim all warranties, express or implied, to the fullest extent permitted by law.</p>
+                </section>
+
+                <section>
+                    <h3 className="font-bold text-2xl">Limitation of Liability</h3>
+                    <p>Qatayworld Pvt Ltd and its affiliates shall not be liable for any indirect, incidental, or consequential damages arising out of or related to your use of the Site. Our total liability is limited to the amount you paid (if any) to use our Site.</p>
+                </section>
+
+                <section>
+                    <h3 className="font-bold text-2xl">Indemnification</h3>
+                    <p>You agree to indemnify and hold harmless Qatayworld Pvt Ltd, its affiliates, and employees from any claims, damages, or expenses arising from your use of the Site or your violation of these Terms.</p>
+                </section>
+
+                <section>
+                    <h3 className="font-bold text-2xl">Governing Law</h3>
+                    <p>These Terms are governed by the laws of the Government of India, without regard to its conflict of law principles. Any disputes shall be resolved in the courts located in Kochi, Kerala.</p>
+                </section>
+
+                <section>
+                    <h3 className="font-bold text-2xl">Termination</h3>
+                    <p>We reserve the right to terminate or suspend your access to the Site at our sole discretion, without prior notice, for any reason, including but not limited to violation of these Terms.</p>
+                </section>
+
+                <section>
+                    <h3 className="font-bold text-2xl">Contact Us</h3>
+                    <p>If you have any questions about these Terms, please contact us at:</p>
+                    <ul className="list-disc list-inside ml-5">
+                        <li>Email: <a href="mailto:mail@tripifyme.com">mail@tripifyme.com</a></li>
+                        <li>Phone: 90720 21217 / 90721 21217 / 90722 21217</li>
+                        <li>Address: TripifyMe by Qatayworld Pvt Ltd, 359, Nagar, Jambusavari Dinne Main Rd, above Arun Ice Cream, 8th Phase, Bengaluru, Karnataka 560078</li>
+                    </ul>
+                </section>     
+                <section>
+                    <p>By using our Site, you agree to these Terms and Conditions. Thank you for visiting Qatayworld Pvt Ltd.</p>
+              
+                </section>
+            </motion.div>
+        </motion.div>
+    );
+};
+
+export default TermsOfServicePage;
