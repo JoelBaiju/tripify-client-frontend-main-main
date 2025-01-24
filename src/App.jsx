@@ -52,9 +52,9 @@ function App() {
       <PopularDestinations />
       <CorporateTravel />
       <Review />
-      <JourneyWithUs />
+      {/* <JourneyWithUs /> */}
       <TaxiBooking />
-      <Blog male={true} />
+      {/* <Blog male={true} /> */}
       <InquiryForm />
       <Footer />
     </>
